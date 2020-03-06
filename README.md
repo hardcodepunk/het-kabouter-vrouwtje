@@ -1,2 +1,3 @@
-# het-kabouter-vrouwtje
-Official website of 'Het Kaboutervrouwtje'.
+# Het Kaboutervrouwtje
+
+Official website for the vegan catering organization 'Het Kaboutervrouwtje'.
