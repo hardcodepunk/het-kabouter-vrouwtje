@@ -65,6 +65,11 @@
   margin: 175px auto 18px;
 }
 
+.icon {
+  margin: 0 auto 65px;
+  height: 150px;
+}
+
 .about {
   padding: 120px 10% 185px;
   color: $gold;
@@ -72,14 +77,29 @@
     margin: 0 auto;
     max-width: 400px;
   }
-  .icon {
-    margin: 0 auto 65px;
-    height: 150px;
-  }
   &__profile {
     &__icon {
-      border-radius: 50%;
-      border: 9px solid $gold;
+      position: relative;
+      &__img {
+        border-radius: 50%;
+        border: 9px solid $gold;
+      }
+      &:before, &:after {
+        content: "";
+        height: 100px;
+        width: 15px;
+        @include translateXY;
+      }
+      &:before {
+        background: url("../img/icon__profile__knife.svg") no-repeat;
+        background-size: contain;
+        margin-left: 100px;
+      }
+      &:after {
+        background: url("../img/icon__profile__fork.svg") no-repeat;
+        background-size: contain;
+        margin-left: -100px;
+      }
     }
   }
   &__animal-rights {
@@ -92,6 +112,10 @@
   padding: 120px 10% 185px;
   background: $gold;
   color: #fff;
+  .icon {
+    height: 100px;
+    margin-bottom: 45px;
+  }
 }
 
 /*
