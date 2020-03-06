@@ -2,9 +2,44 @@
  * lay-out
  */
 
+.section {
+  width: 100%;
+}
+
 /*
  * components
  */
+
+.splash {
+  position: relative;
+  height: 100%;
+  background-color: gray;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .splash__title {
+    position: relative;
+    margin-left: 110px;
+    &__sub {
+      position: absolute;
+      &__pre {
+        left: -90px;
+        bottom: 30px;
+        font-size: 40px;
+        text-transform: uppercase;
+      }
+      &__post {
+        bottom: -43px;
+        right: 110px;
+        font-size: 85px;
+      }
+    }
+  }
+  .splash__subtitle {
+    margin-top: 85px;
+  }
+}
 
 /*
  * styling

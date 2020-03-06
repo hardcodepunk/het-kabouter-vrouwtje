@@ -5,3 +5,41 @@
 // =============================================
 // Typography
 // =============================================
+
+@font-face {
+  font-family: "The Wild Breath of Zelda";
+  src: url("../font/The_Wild_Breath_of_Zelda.eot");
+  src:
+    url("../font/The_Wild_Breath_of_Zelda.eot?#iefix") format('embedded-opentype'),
+    url("../font/The_Wild_Breath_of_Zelda.woff") format("woff"),
+    url("../font/The_Wild_Breath_of_Zelda.ttf") format("truetype"),
+    url("../font/The_Wild_Breath_of_Zelda.svg#TheWildBreathofZelda") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quattrocento';
+  src: url('../font/Quattrocento.eot');
+  src:
+    url('../font/Quattrocento.eot?#iefix') format('embedded-opentype'),
+    url('../font/Quattrocento.woff2') format('woff2'),
+    url('../font/Quattrocento.woff') format('woff'),
+    url('../font/Quattrocento.ttf') format('truetype'),
+    url('../font/Quattrocento.svg#Quattrocento') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quattrocento';
+  src: url('../font/Quattrocento-Bold.eot');
+  src:
+    url('../font/Quattrocento-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../font/Quattrocento-Bold.woff2') format('woff2'),
+    url('../font/Quattrocento-Bold.woff') format('woff'),
+    url('../font/Quattrocento-Bold.ttf') format('truetype'),
+    url('../font/Quattrocento-Bold.svg#Quattrocento-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}

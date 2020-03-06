@@ -3,20 +3,18 @@
 // =============================================
 
 @mixin title-1 {
-  margin: 0;
-  margin-bottom: 0.7em;
-  font-size: 4em;
-  font-weight: 200;
-  line-height: 1.2em;
-  text-transform: uppercase;
+  font-family: "The Wild Breath of Zelda";
+  font-size: 150px;
+  color: #fff;
   text-rendering: optimizeLegibility;
 }
 
 @mixin title-2 {
-  margin: 0;
-  margin-bottom: 0.7em;
-  font-size: 3em;
-  font-weight: 200;
+  font-family: 'Quattrocento';
+  font-weight: bold;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #fff;
   text-rendering: optimizeLegibility;
 }
 
