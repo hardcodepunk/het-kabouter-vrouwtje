@@ -27,19 +27,15 @@
 }
 
 @mixin title-4 {
-  margin: 0;
-  margin-bottom: 0.7em;
-  font-size: 1.5em;
-  font-weight: 200;
-  line-height: 1.2em;
-  text-transform: uppercase;
+  font-family: "The Wild Breath of Zelda";
+  font-size: 34px;
+  line-height: 28px;
+  margin-bottom: 24px;
   text-rendering: optimizeLegibility;
 }
 
 @mixin title-5 {
-  margin: 0;
-  font-size: 1.4em;
-  font-weight: 200;
-  line-height: 1.75em;
+  font-size: 17px;
+  line-height: 28px;
   text-rendering: optimizeLegibility;
 }

@@ -6,6 +6,16 @@
   width: 100%;
 }
 
+.row {
+  display: flex;
+  flex-flow: row nowrap;
+  text-align: center;
+}
+
+.columns-2 {
+  width: 50%;
+}
+
 /*
  * components
  */
@@ -39,6 +49,34 @@
   .splash__subtitle {
     margin-top: 85px;
   }
+}
+
+.about {
+  margin: 120px 0 0;
+  padding: 0 10%;
+  color: $gold;
+  p {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  .icon {
+    margin: 0 auto 65px;
+    height: 150px;
+  }
+  &__profile {
+    &__icon {
+      border-radius: 50%;
+      border: 9px solid $gold;
+    }
+  }
+  &__animal-rights {
+    &__icon {
+    }
+  }
+}
+
+.gallery {
+  margin: 175px;
 }
 
 /*
