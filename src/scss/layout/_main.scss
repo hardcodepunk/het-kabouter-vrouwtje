@@ -18,6 +18,11 @@
   }
 }
 
+.wrapper {
+  padding: 0 10%;
+  width: 100%;
+}
+
 .row {
   display: flex;
   flex-flow: row nowrap;
@@ -39,7 +44,8 @@
 .splash {
   position: relative;
   height: 100%;
-  background-color: gray;
+  background: url("../img/slider__img-1.jpg") no-repeat;
+  background-size: cover;
   color: #fff;
   text-align: center;
   display: flex;
@@ -70,6 +76,72 @@
 
 .gallery {
   margin: 175px auto 18px;
+  width: 100%;
+  padding: 0 10%;
+  &__display {
+    display: flex;
+    width: 100%;
+    &__button {
+      width: 10%;
+      margin: 40px 34px 40px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $brown;
+      transition: background-color 0.3s ease-in-out;
+      max-height: 400px;
+      cursor: pointer;
+      &:hover {
+        background-color: darken($brown, 10%);
+      }
+      &__icon {
+        padding: 0 10%;
+      }
+      &.is-hidden {
+        visibility: hidden;
+      }
+    }
+    &__button-right {
+      margin: 40px 0 40px 34px;
+      img {
+        transform: scale(-1, 1);
+      }
+    }
+    &__img {
+      width: 100%;
+    }
+    &__pagination {
+      display: none;
+    }
+  }
+  &__navigation {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 34px;
+    &__item {
+      height: 100%;
+      opacity: 0.7;
+      transition: opacity 0.3s ease-in-out;
+      cursor: pointer;
+      &.is-being-displayed {
+        opacity: 1;
+        cursor: default;
+      }
+      &:hover {
+        opacity: 1;
+      }
+      &__container {
+        height: 100%;
+        margin: 0 7px;
+        &__img {
+          height: 100%;
+        }
+      }
+    }
+  }
 }
 
 .icon {
@@ -78,8 +150,9 @@
 }
 
 .about {
-  padding: 120px 10% 185px;
+  padding: 120px 0;
   color: $gold;
+  margin: 0 auto;
   p {
     margin: 0 auto;
     max-width: 400px;
@@ -116,7 +189,7 @@
 }
 
 .offer {
-  padding: 120px 10% 185px;
+  padding: 120px 0 185px;
   background: $gold;
   color: #fff;
   .icon {
@@ -126,7 +199,7 @@
 }
 
 .kapsaga {
-  padding: 120px 10% 185px;
+  padding: 120px 0 185px;
   background: $green;
   color: $gold;
   &__illustration {
