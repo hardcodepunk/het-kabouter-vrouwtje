@@ -90,6 +90,7 @@
       background-color: $brown;
       transition: background-color 0.3s ease-in-out;
       max-height: 400px;
+      user-select: none;
       cursor: pointer;
       &:hover {
         background-color: darken($brown, 10%);
