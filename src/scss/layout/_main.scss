@@ -21,6 +21,7 @@
 .wrapper {
   padding: 0 10%;
   width: 100%;
+
 }
 
 .row {
@@ -191,12 +192,61 @@
 }
 
 .offer {
-  padding: 120px 0 185px;
+  padding: 120px 0 220px;
   background: $gold;
   color: #fff;
   .icon {
     height: 100px;
     margin-bottom: 45px;
+  }
+}
+
+.calendar {
+  margin-top: 120px;
+  text-align: center;
+  &__title {
+    margin-bottom: 34px;
+  }
+  &__event {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+    &__date {
+      margin-right: 34px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    &__content {
+      &__title {
+        font-size: 50px;
+      }
+      &__anchors {
+        font-size: 20px;
+        font-family: "The Wild Breath of Zelda";
+        &__anchor {
+          padding-left: 34px;
+          margin-right: 24px;
+          position: relative;
+          &:before {
+            content: "";
+            @include translateY;
+            left: 0;
+            background: url("../img/icon__calendar-anchor.svg") no-repeat;
+            background-size: 100%;
+            height: 100%;
+            width: 20px;
+            transform-origin: center;
+          }
+          &:hover {
+            &:before {
+              background: url("../img/icon__calendar-anchor--active.svg") no-repeat;
+              background-size: 100%;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -207,6 +257,22 @@
   &__illustration {
     height: 110px;
     margin: 0 auto;
+  }
+}
+
+.footer {
+  background: #7c5f5b;
+  padding: 120px 0 185px;
+  color: #fff;
+  .row {
+    text-align: left;
+  }
+  .footer__title {
+    color: #b5944d;
+    margin-bottom: 4px;
+  }
+  &__address {
+    margin-bottom: 54px;
   }
 }
 

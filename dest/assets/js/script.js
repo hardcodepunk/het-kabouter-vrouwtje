@@ -1,74 +1,17 @@
+/*
+ * gallery
+ */
 
-/*document.onkeydown = function(e) {
-  var displayedItem = document.querySelector('li.shop-item__gallery__item.is-being-displayed');
-
-  switch (e.keyCode) {
-
-    case 37:
-      var previousItem = displayedItem.previousElementSibling;
-
-      if (previousItem !== null) {
-        displayedItem.classList.remove('is-being-displayed');
-        previousItem.classList.add('is-being-displayed');
-
-        sliderProjection.src = previousItem.querySelector('.shop-item__gallery__item__visual__img').src;
-
-        if (previousItem.previousElementSibling == null) {
-          btnPrevious.classList.add('is-hidden');
-        }
-
-        if (btnNext.classList.contains('is-hidden')) {
-          btnNext.classList.remove('is-hidden');
-        }
-
-        currentLocation -= 1;
-
-        paginationElementCurrent.innerHTML = currentLocation;
-      }
-
-      break;
-
-    case 39:
-
-      var nextItem = displayedItem.nextElementSibling;
-
-      if (nextItem !== null) {
-        displayedItem.classList.remove('is-being-displayed');
-        nextItem.classList.add('is-being-displayed');
-        sliderProjection.src = nextItem.querySelector('.shop-item__gallery__item__visual__img').src;
-
-        if ( nextItem.nextElementSibling == null ) {
-          btnNext.classList.add('is-hidden');
-        }
-
-        if (btnPrevious.classList.contains('is-hidden')) {
-          btnPrevious.classList.remove('is-hidden');
-        }
-
-        currentLocation += 1;
-        paginationElementCurrent.innerHTML = currentLocation;
-      }
-
-      break;
-  }
-};*/
-
-// gallery
-
+// loop over galleries and activate functionality
 var galleries = document.querySelectorAll('.gallery');
 for (var i = 0; i < galleries.length; i++) {
-  galleries[i].id = "gallery-" + [i + 1];
-  console.log(galleries[i].id);
   galleryFunctionality(galleries[i]);
 }
 
-
+// gallery functionality
 function galleryFunctionality(el) {
-  console.log("added functionality");
   var sliderItems = el.querySelectorAll('.gallery__navigation__item');
-  console.log(sliderItems);
   var sliderProjection = el.querySelector('.gallery__display__img');
-  console.log(sliderProjection);
 
   for (var i = 0; i < sliderItems.length; i++) {
     sliderItems[i].addEventListener('click', function() {
@@ -103,7 +46,6 @@ function galleryFunctionality(el) {
 
       // prev btn clicked
       if (this == btnPrevious) {
-        console.log("prev btn clicked");
         var previousItem = displayedItem.previousElementSibling;
 
         if (previousItem == null) {
@@ -116,7 +58,6 @@ function galleryFunctionality(el) {
 
       // next btn clicked
       } else if ( this == btnNext ) {
-        console.log("next btn clicked");
         var nextItem = displayedItem.nextElementSibling;
 
         if ( nextItem == null ) {
