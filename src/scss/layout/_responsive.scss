@@ -1,0 +1,118 @@
+@media only screen and (max-width: 1200px) {
+  p, .body-regular {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  h4, .title-4 {
+    font-size: 30px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .about {
+    .column {
+      flex-basis: 100%;
+      margin-top: 85px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+  .offer {
+    .section__introduction {
+      margin-bottom: 0;
+    }
+    .column {
+      flex-basis: 50%;
+      margin-top: 85px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .gallery {
+     margin: 85px auto 18px;
+     width: 100%;
+     padding: 0;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  h1, .title-1 {
+    font-size: 75px;
+  }
+  h2, .title-2 {
+    font-size: 16px;
+  }
+  h3, .title-3 {
+    font-size: 90px;
+  }
+  .splash {
+    .splash {
+      &__title {
+      position: relative;
+      margin-left: 50px;
+        &__sub {
+          &__pre {
+            left: -40px;
+            bottom: 20px;
+            font-size: 20px;
+          }
+          &__post {
+            bottom: -22px;
+            right: 55px;
+            font-size: 42px;
+          }
+        }
+      }
+      &__subtitle {
+        margin-top: 45px;
+      }
+    }
+  }
+  .offer {
+    .column {
+      flex-basis: 100%;
+    }
+  }
+  .gallery {
+    &__display {
+      &__button {
+        margin: 40px 17px 40px 0;
+      }
+      &__button-right {
+        margin: 40px 0 40px 17px;
+      }
+    }
+    &__navigation {
+      display: none;
+    }
+  }
+  .calendar {
+    &__event {
+      text-align: left;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 31px;
+      &__date {
+        margin-right: 31px;
+        font-size: 10px;
+        font-weight: bold;
+      }
+      &__content {
+        &__title {
+          font-size: 34px;
+        }
+        &__anchors {
+          font-size: 16px;
+          &__anchor {
+            margin-top: 14px;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
