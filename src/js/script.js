@@ -11,7 +11,7 @@ for (var i = 0; i < galleries.length; i++) {
 // gallery functionality
 function galleryFunctionality(el) {
   var sliderItems = el.querySelectorAll('.gallery__navigation__item');
-  var sliderProjection = el.querySelector('.gallery__display__img');
+  var sliderProjection = el.querySelector('.gallery__display__projection__img');
 
   for (var i = 0; i < sliderItems.length; i++) {
     sliderItems[i].addEventListener('click', function() {
