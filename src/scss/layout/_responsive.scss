@@ -79,7 +79,7 @@
   }
   .gallery__display__projection {
     flex-basis: 65%;
-  } 
+  }
   .gallery {
     &__display {
       &__button {
@@ -108,6 +108,7 @@
       &__content {
         &__title {
           font-size: 34px;
+          margin-bottom: 0;
         }
         &__anchors {
           font-size: 16px;
