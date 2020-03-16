@@ -102,7 +102,7 @@
       margin-bottom: 31px;
       &__date {
         margin-right: 31px;
-        font-size: 10px;
+        font-size: 12px;
         font-weight: bold;
       }
       &__content {
@@ -114,9 +114,98 @@
           font-size: 16px;
           &__anchor {
             margin-top: 14px;
-            display: block;
           }
         }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  p, .body-regular {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  h3, .title-3 {
+    font-size: 70px;
+  }
+  h4, .title-4 {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 7px;
+  }
+
+  .about {
+    padding: 70px 0;
+    color: #b5944d;
+    margin: 0 auto;
+  }
+  .offer {
+    padding: 70px 0 90px;
+    .icon {
+      height: 80px;
+      margin-bottom: 34px;
+    }
+  }
+  .offer .column {
+    margin-top: 45px;
+  }
+  .calendar {
+    margin-top: 70px;
+    &__event {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      &__date {
+        margin: 0 0 14px 0;
+      }
+      &__content {
+        &__anchors {
+          flex-direction: column;
+          margin-left: 24px;
+        }
+      }
+    }
+  }
+  .kapsaga {
+    padding: 70px 0 120px;
+  }
+  .section__introduction {
+    margin: 0 auto 45px;
+  }
+  .footer {
+    padding: 70px 0 120px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  p, .body-regular {
+    font-size: 13px;
+    line-height: 21px;
+  }
+  h1, .title-1 {
+    font-size: 70px;
+  }
+  .splash {
+    .splash {
+      &__title {
+      position: relative;
+      margin-left: 42px;
+        &__sub {
+          &__pre {
+            left: -40px;
+            bottom: 20px;
+            font-size: 20px;
+          }
+          &__post {
+            bottom: -19px;
+            right: 55px;
+            font-size: 37px;
+          }
+        }
+      }
+      &__subtitle {
+        margin-top: 34px;
       }
     }
   }
