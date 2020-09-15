@@ -72,3 +72,9 @@ function galleryFunctionality(el) {
     });
   }
 }
+
+window.onload = function() {
+  $(".flexslider").flexslider({
+    directionNav: !1
+  })
+}
