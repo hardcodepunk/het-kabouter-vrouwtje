@@ -12,9 +12,12 @@ html {
 }
 
 body {
-    background: #FFFFFF;
-    color: #000000;
-    line-height: 1;
+  background: #FFFFFF;
+  color: #000000;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
 }
 
 html,
