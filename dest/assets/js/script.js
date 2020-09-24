@@ -12,14 +12,17 @@ for (var i = 0; i < galleries.length; i++) {
 function galleryFunctionality(el) {
   var sliderItems = el.querySelectorAll('.gallery__navigation__item');
   var sliderProjection = el.querySelector('.gallery__display__projection__img');
+  var galleryNavigation = el.querySelector('.gallery__navigation');
+
+  //console.log(sliderItems);
+  console.log(sliderItems[0]);
+  sliderItems[0].classList.add('is-being-displayed');
 
   firstslideritemImgsrc = sliderItems[0].querySelector('.gallery__navigation__item__container__img').src;
   sliderProjection.src = firstslideritemImgsrc;
 
-  // set initial img to first image when rendering page
-  //sliderProjection.src =
-
   for (var i = 0; i < sliderItems.length; i++) {
+
     sliderItems[i].addEventListener('click', function() {
       if (this.classList.contains('is-being-displayed')) {
       } else {
