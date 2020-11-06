@@ -120,16 +120,18 @@
   }
   &__navigation {
     width: 100%;
-    height: 100px;
     display: flex;
+    margin-top: 34px;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-top: 34px;
+    padding: 0 5%;
     &__item {
-      height: 100%;
       opacity: 0.7;
       transition: opacity 0.3s ease-in-out;
       cursor: pointer;
+      flex-basis: 10%;
+      padding: 5px;
       &.is-being-displayed {
         opacity: 1;
         cursor: default;
@@ -138,10 +140,10 @@
         opacity: 1;
       }
       &__container {
-        height: 100%;
+        width: 100%;
         margin: 0 7px;
         &__img {
-          height: 100%;
+          width: 100%;
         }
       }
     }
