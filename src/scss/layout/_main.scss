@@ -331,10 +331,13 @@ flexslider
   top: 0;
   left: 0;
   overflow: hidden;
-  img {
-    width: 100%;
-    @include translateXY;
-  }
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /* ====================================================================================================================

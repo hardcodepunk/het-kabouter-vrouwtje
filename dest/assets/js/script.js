@@ -14,8 +14,6 @@ function galleryFunctionality(el) {
   var sliderProjection = el.querySelector('.gallery__display__projection__img');
   var galleryNavigation = el.querySelector('.gallery__navigation');
 
-  //console.log(sliderItems);
-  console.log(sliderItems[0]);
   sliderItems[0].classList.add('is-being-displayed');
 
   firstslideritemImgsrc = sliderItems[0].querySelector('.gallery__navigation__item__container__img').src;
@@ -86,4 +84,11 @@ window.onload = function() {
   $(".flexslider").flexslider({
     directionNav: !1
   })
+
+  // load dynamic slides background images
+  var loadSlides = document.getElementsByClassName('js-load-slide');
+  for (var i=0; i < loadSlides.length; i++) {
+    var loadSlide = loadSlides[i];
+    loadSlide.style.backgroundImage = "url('" + loadSlide.getAttribute('data-src') + "')";
+  };
 }
