@@ -294,6 +294,7 @@
     font-size: 20px;
     font-family: "The Wild Breath of Zelda";
     color: #b5944d;
+    display: flex;
     &__anchor {
       padding-left: 34px;
       margin-right: 24px;
@@ -334,7 +335,6 @@ flexslider
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
