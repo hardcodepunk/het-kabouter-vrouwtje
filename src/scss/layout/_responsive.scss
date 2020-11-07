@@ -98,8 +98,7 @@
     &__event {
       text-align: left;
       display: flex;
-      justify-content: center;
-      margin-bottom: 31px;
+      margin-bottom: 40px;
       &__date {
         margin-right: 31px;
         font-size: 12px;
@@ -108,6 +107,7 @@
       &__content {
         &__title {
           font-size: 34px;
+          line-height: 44px;
           margin-bottom: 0;
         }
         &__anchors {
@@ -162,6 +162,8 @@
       &__content {
         &__anchors {
           flex-direction: column;
+          justify-content: center;
+          align-items: center;
           margin-left: 24px;
         }
       }
