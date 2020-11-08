@@ -316,6 +316,18 @@
       }
     }
   }
+  &__credits {
+    margin: 40px 0 20px;
+    font-family: "The Wild Breath of Zelda";
+    font-size: 17px;
+    &__anchor {
+      text-decoration: underline;
+      transition: color 0.3s ease-in-out;
+      &:hover {
+        color: $gold;
+      }
+    }
+  }
 }
 
 /*
