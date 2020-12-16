@@ -17,15 +17,16 @@
 }
 
 @mixin title-3 {
-  font-family: "The Wild Breath of Zelda";
-  font-size: 115px;
+  font-family: 'Miltonian Tattoo';
+  font-size: 94px;
+  line-height: 1.7em;
   text-rendering: optimizeLegibility;
 }
 
 @mixin title-4 {
-  font-family: "The Wild Breath of Zelda";
+  font-family: 'Miltonian Tattoo';
   font-size: 34px;
-  line-height: 28px;
+  line-height: 1.2em;
   margin-bottom: 24px;
   text-rendering: optimizeLegibility;
 }
